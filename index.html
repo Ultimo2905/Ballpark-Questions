@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="img/favicon.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="multistep form">
+    <meta name="keywords" content="Questions,Ballpark,SQFT,Price">
+    <meta name="author" content="Kotorazhuk Volodymyr">
+    <title>ProPedia</title>
+    <link rel="stylesheet" href="css/myNormalizeNet.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+
+</head>
+
+<body>
+
+    <section>
+        <div class="container ">
+            <header>
+                <a href="">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="logo">
+                    </div>
+                </a>
+                <nav class=" navbar-collapse justify-content-md-center" id="navbarsExample08">
+                    <ul class="navbar-nav letter-spacing">
+                        <li class="nav-item"><a href="">HOME</a> </li>
+                        <li class="nav-item"><a href="">HOW IT WORKS</a></li>
+                        <li class="nav-item"><a href="">ABOUT US</a></li>
+                        <li class="nav-item"><a href="">PRODUCTS</a></li>
+                        <li class="nav-item"><a href="">CONTACT US</a></li>
+                        <li class="nav-item"><a href="">PROFILE</a> <img src="img/Ellipseblue.svg" alt=""></li>
+                    </ul>
+                </nav>
+
+
+
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <label id="hamburger" class="hamburger">
+                    <span class="navicon"></span>
+                </label>
+                </div>
+            </header>
+            <div class="main">
+                <section>
+                    <div class="multistepTitle">
+                        <h1>Ballpark <br> Questions</h1>
+                    </div>
+                    <div class="multistep">
+                        <form id="regForm">
+                            <div class="tab mob-tab_marg-b">
+                                <div class="tab-main-content">
+                                    <div class="tab-main-content-title">
+                                        <h4>Total square footage</h4>
+                                    </div>
+                                    <div class="tab-block">
+                                        <div class="tab-select-block">
+                                            <div class="tab-select-block-img">
+                                                <img src="img/ILLUSTRATION.svg" alt="">
+                                            </div>
+                                            <div class="tab-sub-block-input">
+                                                <input type="number" id="Prise" min="1" max="9999">
+                                            </div>
+                                            <div class="tab-sub-block-text">
+                                                <p>SQFT</p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="button-block">
+                                    <div class="buttons-controls">
+                                        <button type="button" class="step__button_prew">Back</button>
+                                        <button type="button" class="step__button_next step__button_nextone" id="nextBtn" onclick="nextSteep(1)">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab mob-tab_marg-b">
+                                <div class="tab-main-content">
+                                    <div class="tab-main-content-title">
+                                        <h4>How many stories is your house? </h4>
+                                    </div>
+                                    <div class="tab-block">
+                                        <div class="tab-two-content">
+                                            <a href="#" class="soone" data-text="1">
+                                                <div class="tab-two-contentblock">
+                                                    <img src="img/hausone.svg" alt="">
+                                                    <p class="housone storieso">1 story</p>
+                                                    <p>Learn more</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="sotwo" data-text="2">
+                                                <div class="tab-two-contentblock">
+                                                    <img src="img/haustwo.svg" alt="">
+                                                    <p class="housone storiest">1 story2</p>
+                                                    <p>Learn more</p>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="sothree" data-text="3">
+                                                <div class="tab-two-contentblock">
+                                                    <img src="img/hausthree.svg" alt="">
+                                                    <p class="housone storiesth">2 stories </p>
+                                                    <p>Learn more</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="button-block">
+                                    <div class="buttons-controls">
+                                        <!-- <button type="button" class="step__button_prew" onclick="prevSteep(-1); refresh();">Back</button> -->
+                                        <button type="button" class="step__button_prew" onclick="prevSteep(-1)">Back</button>
+                                        <button type="button" class="step__button_next step__button_next_one" onclick="nextSteep(1)">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab mob-tab_marg-b">
+                                <div class="tab-main-content">
+                                    <div class="tab-main-content-title">
+                                        <h4>What type of garge (if any) does your house have?
+                                        </h4>
+                                    </div>
+                                    <div class="tab-block">
+                                        <div class="tab-three-content">
+                                            <a href="#" class="stone" data-text_el="noGarage">
+                                                <div class="tab-three-contentblock">
+                                                    <img src="img/haussmal.svg" alt="">
+                                                    <p class="housone noGarage">No garage</p>
+                                                    <p>Learn more</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="sttwo" data-text_el="detachedGarage">
+                                                <div class="tab-three-contentblock">
+                                                    <img src="img/haussmallGar.svg" alt="">
+                                                    <p class="housone detachedGarage">Detached garage</p>
+                                                    <p>Learn more</p>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="stthree" data-text_el="attachedGarage">
+                                                <div class="tab-three-contentblock">
+                                                    <img src="img/haussmallGarTwo.svg" alt="">
+                                                    <p class="housone attachedGarage">Attached garage</p>
+                                                    <p>Learn more</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="stfoure" data-text_el="attachedGaragee">
+                                                <div class="tab-three-contentblock">
+                                                    <img src="img/haussmallGarThree.svg" alt="">
+                                                    <p class="housone attachedGaragee">Attached garage</p>
+                                                    <p>Learn more</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="button-block">
+                                    <div class="buttons-controls">
+                                        <!-- <button type="button" class="step__button_prew" onclick="prevSteep(-1); refresh();">Back</button> -->
+                                        <button type="button" class="step__button_prew" onclick="prevSteep(-1)">Back</button>
+                                        <button type="button" class="step__button_next step__button_next_two" onclick="nextSteep(1)">Next</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab mob-tab_marg-b">
+                                <div class="tab-main-content">
+                                    <div class="tab-main-content-title">
+                                        <h4>What is the shape of your roof?</h4>
+                                    </div>
+                                    <div class="tab-block">
+                                        <div class="tab-foure-content">
+                                            <a href="#" class="sf">
+                                                <div class="tab-foure-contentblock">
+                                                    <img src="img/smallBild.svg" alt="">
+                                                    <p class="housone simple">Simple</p>
+                                                    <p>Learn more</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="sf">
+                                                <div class="tab-foure-contentblock">
+                                                    <img src="img/midlebild.svg" alt="">
+                                                    <p class="housone moderate">Moderate</p>
+                                                    <p>Learn more</p>
+                                                </div>
+                                            </a>
+
+                                            <a href="#" class="sf">
+                                                <div class="tab-foure-contentblock">
+                                                    <img src="img/largbild.svg" alt="">
+                                                    <p class="housone complex">Complex</p>
+                                                    <p>Learn more</p>
+                                                </div>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="button-block">
+                                    <div class="buttons-controls">
+                                        <button type="button" class="step__button_prew" onclick="prevSteep(-1)">Back</button>
+                                        <button type="button" class="step__last_next step__button_next_three" id='last'>Next</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab mob-tab_marg-b">
+                                <div class="tab-main-content">
+                                    <div id="funfacts">
+                                        <div class="tab-main-content-title">
+                                            <h4>Estimated price for a given scope of work</h4>
+                                        </div>
+                                        <div class="funfacts">
+                                            <div class="statisticsCount">
+                                                <div class=" stat ">
+                                                    <div class=" count_block">
+                                                        <p class="numbers">6200</p>
+                                                    </div>
+                                                </div>
+                                                <div class=" stat ">
+                                                    <div class=" count_block">
+                                                        <p class="numbers">7400</p>
+
+                                                    </div>
+                                                </div>
+                                                <div class=" stat ">
+                                                    <div class=" count_block">
+                                                        <p class="numbers">9500</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="statisticsLine">
+
+                                            </div>
+                                            <div class="statisticsName">
+                                                <p class="statisticsText">Minimum</p>
+                                                <p class="statisticsTextnone"></p>
+                                                <p class="statisticsText">Average</p>
+                                                <p class="statisticsTextnone"></p>
+                                                <p class="statisticsText"><sup>*</sup>Maximum</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="button-block">
+                                    <div class="buttons-controls">
+                                        <!-- <button type="button" class="step__button_rew" onclick="prevSteep(-1)">Back</button> -->
+                                        <!-- <button type="button" class="step__button_refresh">I want more accurate price</button> -->
+                                        <a href="https://www.figma.com/file/FNTsQlHqQbG5BYja3HA488/Geniusee-test-task?node-id=13%3A1990" target="blank" class="step__button_refresh">I want more accurate price</a>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+                <div class="sidebar">
+                    <div class="steps">
+                        <div class="step-num">
+                            <p class="step">Type of project</p>
+                            <p id="typeProject" class="result"><b>Roofing</b></p>
+                            <p class="step">Square footage</p>
+                            <p id="sowePrise" class="result"><span></span></p>
+                            <p class="step">Stories</p>
+                            <p id="housonepast" class="result"><span></span></p>
+                            <p class="step">Garage</p>
+                            <p id="housTwopast" class="result"><span></span></p>
+                            <p class="step">Pitch</p>
+                            <p id="housThreepast" class="result"><span></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
